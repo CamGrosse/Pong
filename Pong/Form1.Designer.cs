@@ -32,6 +32,7 @@
             this.gameEngine = new System.Windows.Forms.Timer(this.components);
             this.p1ScoreLabel = new System.Windows.Forms.Label();
             this.p2ScoreLabel = new System.Windows.Forms.Label();
+            this.winLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // gameEngine
@@ -49,7 +50,7 @@
             this.p1ScoreLabel.Name = "p1ScoreLabel";
             this.p1ScoreLabel.Size = new System.Drawing.Size(72, 23);
             this.p1ScoreLabel.TabIndex = 0;
-            this.p1ScoreLabel.Text = "label1";
+            this.p1ScoreLabel.Text = "0";
             this.p1ScoreLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // p2ScoreLabel
@@ -61,8 +62,21 @@
             this.p2ScoreLabel.Name = "p2ScoreLabel";
             this.p2ScoreLabel.Size = new System.Drawing.Size(72, 23);
             this.p2ScoreLabel.TabIndex = 1;
-            this.p2ScoreLabel.Text = "label1";
+            this.p2ScoreLabel.Text = "0";
             this.p2ScoreLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // winLabel
+            // 
+            this.winLabel.BackColor = System.Drawing.Color.Transparent;
+            this.winLabel.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.winLabel.ForeColor = System.Drawing.Color.White;
+            this.winLabel.Location = new System.Drawing.Point(187, 179);
+            this.winLabel.Name = "winLabel";
+            this.winLabel.Size = new System.Drawing.Size(209, 50);
+            this.winLabel.TabIndex = 2;
+            this.winLabel.Text = "label1";
+            this.winLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.winLabel.Visible = false;
             // 
             // Form1
             // 
@@ -70,6 +84,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(600, 400);
+            this.Controls.Add(this.winLabel);
             this.Controls.Add(this.p2ScoreLabel);
             this.Controls.Add(this.p1ScoreLabel);
             this.DoubleBuffered = true;
@@ -89,6 +104,7 @@
         private System.Windows.Forms.Timer gameEngine;
         private System.Windows.Forms.Label p1ScoreLabel;
         private System.Windows.Forms.Label p2ScoreLabel;
+        private System.Windows.Forms.Label winLabel;
     }
 }
 

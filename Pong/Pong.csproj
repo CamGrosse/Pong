@@ -65,6 +65,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -78,6 +79,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\death.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hl2_Rebel-Ragdoll485-573931361.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Right Cross-SoundBible.com-1721311663.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Upper Cut-SoundBible.com-1272257235.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Web capture_29-4-2022_14936_www.bing.com.jpeg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
